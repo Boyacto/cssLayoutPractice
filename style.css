@@ -1,0 +1,16 @@
+.father {
+    display: flex;
+    /* Main axis*/
+    justify-content: space-around;
+    /* Cross axis*/
+    align-items: center;
+    height: 200vh;
+
+}
+.child{
+    width: 200px;
+    height: 200px;
+    background: chocolate;
+    background: white;
+
+}
