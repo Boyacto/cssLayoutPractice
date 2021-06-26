@@ -1,0 +1,82 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  background-color:#DDE1D4;
+  padding:15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin:0 auto;
+}
+
+.grid {
+    display: grid;
+    position: relative;
+    width: 300px;
+    width: 70vw;
+    height: 180px;
+    height: 42vw;
+    grid-template:
+      "tile1 tile1 tile2 tile2" 1fr
+      "tile1 tile1 tile2 tile2" 1fr
+      "tile3 tile3 subTile1 subTile2" 1fr
+      "tile3 tile3 subTile3 subTile4" 1fr / 1fr 1fr 1fr 1fr;
+  }
+.grid > * {
+    text-align: center;
+    /* display: flex; I should not use flexbox in this practice
+    align-items: center;
+    justify-content: center; */
+    position: relative;
+}
+.tile{
+    font-size: 20px;
+    font-size: 4vw;
+}
+.subTile{
+    font-size: 10px;
+    font-size: 2vw;
+}
+span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+.tile:first-child{
+    background: #c0cbde;
+    color:#d54a32;
+    grid-area: tile1;
+}
+.tile:nth-child(2){
+    background: #128080;
+    color:#fff;
+    grid-area: tile2;
+}
+.tile:nth-child(3){
+    background: #d54a32;
+    color:#fff;
+    grid-area: tile3;
+}
+
+.subTile:nth-child(4){
+    background: #f7abc5;
+    color:#d54a32;
+    grid-area: subTile1;
+}
+.subTile:nth-child(5){
+    background: #5f5fa9;
+    color:white;
+    grid-area: subTile2;
+}
+.subTile:nth-child(6){
+    background: #ffc128;
+    color:#d54a32;
+    grid-area: subTile3;
+}
+.subTile:last-child{
+    background: #f97374;
+    color:white;
+    grid-area: subTile4;
+}
