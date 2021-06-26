@@ -1,0 +1,17 @@
+{
+  "name": "gulpPractice",
+  "version": "1.0.0",
+  "description": "practice the gulp",
+  "author": "Bo Hyeon Cha <bohyeoncha2000@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
